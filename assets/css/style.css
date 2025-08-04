@@ -27,7 +27,7 @@ Default CSS
 :root {
   --fontFamily: "Poppins", sans-serif;
   --sub-fontFamily: "Ink Free";
-  --mainColor: #f14300;
+  --mainColor: #146835;
   --paragraphColor: #8c8c8c;
   --whiteColor: #ffffff;
   --titleColor: #2a2a2a;
@@ -611,7 +611,7 @@ Navbar Area
   display: none;
 }
 
-.sticky-nav {
+/* .sticky-nav {
   top: 0;
   position: fixed;
   animation: 900ms ease-in-out 5s normal none 1 running fadeInDown;
@@ -630,7 +630,7 @@ Navbar Area
   background-color: var(--whiteColor);
   position: fixed;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
+} */
 
 /*=================================
 Navbar Area
@@ -844,7 +844,7 @@ Home Banner Area
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000000;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4));
   opacity: 0.5;
 }
 .slider-item .slider-content {
