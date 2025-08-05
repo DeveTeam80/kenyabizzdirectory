@@ -124,6 +124,10 @@ img {
   background-color: var(--mainColor);
 }
 
+.bg-dark-red {
+  background-color: #781818;
+}
+
 .bg-color-blue {
   background-color: #2d5eff;
 }
@@ -1097,7 +1101,7 @@ Inner Banner
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000000;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4));
   opacity: 0.7;
 }
 .inner-banner .inner-title {
