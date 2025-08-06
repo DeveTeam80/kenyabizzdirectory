@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.kenyabizzdirectory.com/$1 [R=301,L] 
+RewriteCond %{http_host} ^kenyabizzdirectory.com [NC]
+RewriteRule ^(.*)$ https://www.kenyabizzdirectory.com/$1 [R=301,L]
+
+#user friendly urls
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [NC,L]
