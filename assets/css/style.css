@@ -241,7 +241,7 @@ Section Title Style End
 Navbar Area
 ====================================*/
 .navbar-area {
-  background-color: transparent;
+  background-color: var(--whiteColor);
   transition: 0.3s;
   position: relative;
   padding-top: 0;
@@ -254,7 +254,7 @@ Navbar Area
   padding: 0;
   padding-left: 0;
   padding-right: 0;
-  background-color: transparent;
+  background-color: var(--whiteColor);
 }
 .navbar-light .navbar-brand img {
   float: left;
@@ -267,7 +267,7 @@ Navbar Area
 /* Main nav */
 .main-nav {
   position: absolute;
-  background-color: transparent;
+  background-color: var(--whiteColor);
   top: 0;
   left: 0;
   padding: 0;
@@ -280,7 +280,7 @@ Navbar Area
 }
 .main-nav nav .navbar-nav .nav-item a {
   text-transform: capitalize;
-  color: var(--whiteColor);
+  color: var(--titleColor);
   font-weight: 400;
   margin-left: 12px;
   margin-right: 12px;
@@ -614,7 +614,34 @@ Navbar Area
 .navbar-light .navbar-brand .logo-two {
   display: none;
 }
+/* --- White MeanMenu Customization --- */
 
+/* Changes the top bar (with the hamburger icon) to white */
+.mean-bar {
+    background: var(--whiteColor) !important;
+    border-bottom: 1px solid #eee; /* Adds a subtle line to separate it */
+}
+
+/* Changes the three lines of the hamburger icon to a dark color */
+.mean-bar a.meanmenu-reveal span {
+    background: var(--titleColor) !important;
+}
+
+/* Changes the background of the dropdown menu itself to white */
+.mean-nav {
+    background: var(--whiteColor) !important;
+}
+
+/* Changes the link text color inside the menu to dark */
+.mean-nav ul li a {
+    color: var(--titleColor) !important;
+    border-top-color: #f0f0f0 !important; /* Makes separator lines lighter */
+}
+
+/* Changes the link text color on hover to your main green color */
+.mean-nav ul li a:hover {
+    color: var(--mainColor) !important;
+}
 /* .sticky-nav {
   top: 0;
   position: fixed;
@@ -4846,6 +4873,13 @@ Product Area
   border: 1px dashed #eeeeee;
   margin-bottom: 30px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 450px;  
+  max-height: 450px;
+  overflow: hidden;
 }
 .product-card .product-content {
   padding: 30px 20px;
@@ -4909,6 +4943,19 @@ Product Area
 }
 .product-card:hover .default-btn.product-btn {
   transform: scale(1);
+}
+
+/* Make images responsive and prevent stretching */
+.product-card img {
+    object-fit: cover;
+    height: 220px;  /* ✅ Adjust to your preference */
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Optional: Ensure content doesn't push card beyond fixed height */
+.product-card .card-text {
+    flex-grow: 1;
 }
 
 /*=================================
@@ -5676,7 +5723,7 @@ Shop Details
 }
 .shop-detls-tab .tab_content {
   border: 1px dashed #eeeeee;
-  padding: 30px;
+  padding: 20px;
 }
 .shop-detls-tab .tab_content .tabs_item .shop-detls-tab-content p {
   color: var(--titleColor);
