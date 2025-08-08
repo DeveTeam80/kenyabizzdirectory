@@ -32,6 +32,16 @@
     <meta property="og:type" content="website" />
     <link rel="canonical" href="www.kenyabizzdirectory.com/shops-and-suppliers/asp-solar-and-electronix" />
     <link rel="icon" type="image/png" href="../assets/img/logo/fav.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZ3GP2FHBP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LZ3GP2FHBP');
+    </script>
+    <script src="../load-partials.js"></script>
 </head>
 
 <body>
@@ -42,160 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="navbar-area">
-        <div class="mobile-nav">
-            <a href="../index" class="logo">
-                <img src="../assets/img/logo/logoa.png" alt="Logo">
-            </a>
-        </div>
-
-        <div class="main-nav">
-            <div class="container-fluid">
-                <nav class="container-max navbar navbar-expand-md navbar-light ">
-                    <a class="navbar-brand" href="../index">
-                        <img src="../assets/img/logo/logoa.png" width="150px" alt="Logo">
-                    </a>
-
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav m-auto">
-
-                            <li class="nav-item">
-                                <a href="../about" class="nav-link">
-                                    About
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Explore Kenya
-                                    <i class='bx '></i>
-                                </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Listing
-                                    <i class='bx bx-plus'></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item">
-                                        <a href="../real-estate/main" class="nav-link">
-                                            Real Estate
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../manufacturing/main" class="nav-link">
-                                            Manufacturing
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="../shops-and-suppliers/main" class="nav-link">
-                                            Shops and Suppliers
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Global Listings
-                                    <i class='bx bx-plus'></i>
-                                </a>
-
-                            </li>
-                            <li class="nav-item">
-                                <a href="../news" class="nav-link">
-                                    News & Updates
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="../contact" class="nav-link">
-                                    Contact
-                                </a>
-                            </li>
-                        </ul>
-
-                        <div class="side-nav d-in-line align-items-center">
-                            <div class="side-item">
-
-                            </div>
-
-                            <div class="side-item">
-                                <div class="nav-add-btn">
-                                    <a href="../add-listing" class="default-btn border-radius">
-                                        Add Listing
-                                        <i class='bx bx-plus'></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="side-item">
-                                <div class="search-box">
-                                    <i class="flaticon-loupe"></i>
-                                </div>
-                            </div>
-
-                            <div class="side-item">
-                                <div class="user-btn">
-                                    <a href="../login">
-                                        <i class="flaticon-contact"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-
-        <div class="side-nav-responsive">
-            <div class="container">
-                <div class="dot-menu">
-                    <div class="circle-inner">
-                        <div class="circle circle-one"></div>
-                        <div class="circle circle-two"></div>
-                        <div class="circle circle-three"></div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="side-nav-inner">
-                        <div class="side-nav justify-content-center  align-items-center">
-                            <div class="side-item">
-                                <div class="cart-btn">
-                                    <a href="#">
-                                        <i class="flaticon-shopping-bags"></i>
-                                        <span>0</span>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="side-item">
-                                <div class="search-box">
-                                    <i class="flaticon-loupe"></i>
-                                </div>
-                            </div>
-
-                            <div class="side-item">
-                                <div class="user-btn">
-                                    <a href="#">
-                                        <i class="flaticon-contact"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="side-item">
-                                <div class="nav-add-btn">
-                                    <a href="#" class="default-btn border-radius">
-                                        Add Listing
-                                        <i class='bx bx-plus'></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div data-include="../partials/navbar.html"></div>
     <div class="search-overlay">
         <div class="d-table">
             <div class="d-table-cell">
@@ -247,7 +104,7 @@
 
                     <div class="col-lg-4">
                         <div class="banner-rating">
-                            <ul>
+                            <!-- <ul>
                                 <li class="rating-star">
                                     <i class='bx bxs-star'></i>
                                     <i class='bx bxs-star'></i>
@@ -259,7 +116,7 @@
                                 <li>
                                     <a href="../#">4.5</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -330,12 +187,6 @@
                                         Our Products
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#reviews">
-                                        <i class="flaticon-writing"></i>
-                                        Reviews
-                                    </a>
-                                </li>
                             </ul>
                         </div>
 
@@ -350,30 +201,84 @@
                                 Our extensive inventory covers a wide range of categories. In **Solar Products**, we
                                 offer
                                 everything from solar panels, inverters, and batteries to complete solar lighting and
-                                water heating systems. For **Electrical Supplies**, we stock cables, switches, circuit
-                                breakers, and more. Our **Electronics** department features a variety of consumer goods
+                                water heating systems. For Electrical Supplies, we stock cables, switches, circuit
+                                breakers, and more. Our Electronics department features a variety of consumer goods
                                 to
                                 enhance your lifestyle. Trust ASP for quality products and expert service.
                             </p>
                         </div>
 
-                        <div class="listing-widget gallery-slider" id="project">
-                            <h3 class="title">Our Products</h3>
-                            <div class="gallery-slider-area owl-carousel owl-theme">
-                                <div class="Gallery-item">
-                                    <img src="../assets/img/shops-img/asp-gluegun.png" alt="glue guns">
-                                </div>
-                                <div class="Gallery-item">
-                                    <img src="../assets/img/shops-img/asp-solar-panel.png"
-                                        alt="solar panels">
-                                </div>
-                                <div class="Gallery-item">
-                                    <img src="../assets/img/shops-img/asp-comp-accessories.png"
-                                        alt="Electronics Items">
-                                </div>
-                                <div class="Gallery-item">
-                                    <img src="../assets/img/shops-img/asp-cctv.png"
-                                        alt="cctv">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="tab shop-detls-tab">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-12 col-md-12">
+                                        <ul class="tabs">
+                                            <li>
+                                                <a href="#">Products / Projects</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Additional Desc.</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="tab_content current active">
+                                            <div class="tabs_item current">
+                                                <div id="project">
+                                                    <div class="row g-4">
+                                                        <div class="col-md-6 h-100">
+                                                            <div class="product-card shadow-sm p-3 rounded">
+                                                                <img src="../assets/img/shops-img/asp-gluegun.png"
+                                                                    class="img-fluid rounded mb-3" alt="glue guns">
+                                                                <h3 class="card-title">Glue Guns</h3>
+                                                                <p class="card-text">Asp Solar and Electronics has the glue guns and hot melt glue sticks you need for all your crafting and repair projects.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 h-100">
+                                                            <div class="product-card shadow-sm p-3 rounded">
+                                                                <img src="../assets/img/shops-img/asp-solar-panel.png"
+                                                                    class="img-fluid rounded mb-3" alt="solar panels">
+                                                                <h3 class="card-title">Solar Panels</h3>
+                                                                <p class="card-text">Generate clean energy with high-efficiency solar panels from Asp Solar and Electronics. Our durable solar solutions are perfect for homes and businesses.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 h-100">
+                                                            <div class="product-card shadow-sm p-3 rounded">
+                                                                <img src="../assets/img/shops-img/asp-comp-accessories.png"
+                                                                    class="img-fluid rounded mb-3"
+                                                                    alt="Electronics Items">
+                                                                <h3 class="card-title">Computers & Electronics Items</h3>
+                                                                <p class="card-text">Explore quality electronic items and tools at Asp Solar and Electronics. Find everything from multimeters and soldering irons to adapters and cables for your projects.</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 h-100">
+                                                            <div class="product-card shadow-sm p-3 rounded">
+                                                                <img src="../assets/img/shops-img/asp-cctv.png"
+                                                                    class="img-fluid rounded mb-3" alt="cctv">
+                                                                <h3 class="card-title">CCTV Products</h3>
+                                                                <p class="card-text">Secure your property with CCTV products from Asp Solar and Electronics. We offer a comprehensive range of CCTV cameras, DVRs, and accessories for reliable surveillance at your home or business.</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="tabs_item">
+                                                <div class="shop-detls-tab-content">
+                                                    
+                                                        <h2>Best Solar and Electronic Products in Tanzania</h2>
+                                                        <P>
+                                                        Asp Solar and Electronix is your one-stop shop for high-quality solar solutions and a wide range of electronic items. We specialize in high-efficiency solar panels, CCTV products for security, and essential electronic components and tools. Whether you're a DIY enthusiast, a professional, or looking to go green, we provide durable and reliable products to meet all your needs. From hot melt glue guns to advanced solar power systems, find everything you need to power your projects and your future.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -384,132 +289,7 @@
                                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
                                 aria-hidden="false" tabindex="0"></iframe>
                         </div>
-
-                        <div class="listing-widget" id="reviews">
-                            <h3 class="title">Customer Reviews - 3</h3>
-                            <div class="listing-widget-review">
-                                <ul>
-                                    <li class="rating-star">
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star'></i>
-                                        <i class='bx bxs-star-half'></i>
-                                        <span>Good</span>
-                                    </li>
-                                    <li>
-                                        <a href="../#">4.5</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="listing-comment">
-                                <ul>
-                                    <li>
-                                        <img src="../assets/img/place-list/listing-details-pro1.png" alt="Image">
-                                        <div class="content">
-                                            <h3>Juma H.</h3>
-                                            <span>August 01, 2025</span>
-                                            <p>ASP is my trusted source for all solar supplies. Their product
-                                                range is extensive, and the quality is consistently high. Their team is
-                                                knowledgeable and always helpful.</p>
-                                            <div class="comment-rating">
-                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                                    class='bx bxs-star'></i>
-                                                <span>5</span>
-                                            </div>
-
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <img src="../assets/img/place-list/listing-details-pro2.png" alt="Image">
-                                        <div class="content">
-                                            <h3>Asha Bakari</h3>
-                                            <span>July 25, 2025</span>
-                                            <p>I was looking for quality electrical fittings for my new house and found
-                                                everything here. The staff offered great advice, and the prices were
-                                                very competitive. Highly recommend!</p>
-                                            <div class="comment-rating">
-                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                                    class='bx bxs-star-half'></i>
-                                                <span>4.5</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <img src="../assets/img/place-list/listing-details-pro2.png" alt="Image">
-                                        <div class="content">
-                                            <h3>David M.</h3>
-                                            <span>June 18, 2025</span>
-                                            <p>Their selection of electronics is impressive. I bought a new sound
-                                                system that has been performing exceptionally well. A great shop for all
-                                                your electronic needs in Kariakoo.</p>
-                                            <div class="comment-rating">
-                                                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                                    class='bx bxs-star'></i><i class='bx bxs-star'></i><i
-                                                    class='bx bxs-star'></i>
-                                                <span>5</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="listing-widget-contact" id="contactForm">
-                            <div class="listing-contact-title">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="listing-widget-mail">
-                                            <i class="flaticon-email-2"></i>
-                                            <div class="content">
-                                                <h3>Don’t Worry</h3>
-                                                <span>Your email is safe with us.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-form">
-                                <form>
-                                    <div class="row justify-content-center">
-                                        <div class="col-lg-6 col-sm-6">
-                                            <div class="form-group">
-                                                <i class='bx bx-user'></i>
-                                                <input type="text" name="name" id="name" class="form-control" required
-                                                    data-error="Please enter your name" placeholder="Your Name*">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-sm-6">
-                                            <div class="form-group">
-                                                <i class='bx bx-user'></i>
-                                                <input type="email" name="email" id="email" class="form-control"
-                                                    required data-error="Please enter your email" placeholder="E-mail*">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12 col-md-12">
-                                            <div class="form-group">
-                                                <i class='bx bx-envelope'></i>
-                                                <textarea name="message" class="form-control" id="message" cols="30"
-                                                    rows="8" required data-error="Write your message"
-                                                    placeholder="Your Message"></textarea>
-                                                <div class="help-block with-errors"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-12 col-md-12">
-                                            <button type="submit" class="default-btn border-radius">
-                                                Submit Comment
-                                                <i class='bx bx-plus'></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                        <div data-include="../partials/contact-form.html"></div>
                     </div>
                 </div>
 
@@ -557,115 +337,7 @@
         </div>
     </div>
     <!-- Footer Area -->
-    <footer class="footer-area footer-bg">
-        <div class="footer-middle pt-100 pb-70">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-widget">
-                            <a href="index.htm" class="logo">
-                                <img src="../assets/img/logo/kbd-white.png" alt="Logo" style="width:70%;">
-                            </a>
-                            <p>
-                                Explore Kenya Bizz is your gateway to local entrepreneurship — connecting Nairobi,
-                                Mombasa, Kisumu, and beyond.
-                            </p>
-                            <p>
-                                Discover verified listings, neighborhood gems, and hidden business champions across
-                                Kenya.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-widget pl-5">
-                            <h3>CONTACT INFO</h3>
-                            <ul class="footer-contact-list">
-                                <li><span>Monday - Saturday :</span> 9 am to 6 pm</li>
-                                <li><span>Phone :</span> <a href="tel:+254700000000">+254 700 000 000</a></li>
-                                <li><span>Email :</span> <a
-                                        href="mailto:hello@kenyabizzdirectory.com">hello@kenyabizzdirectory.com</a></li>
-                            </ul>
-
-                            <ul class="social-link">
-                                <li><a href="https://www.facebook.com/explorekenyabizz" target="_blank"><i
-                                            class='bx bxl-facebook'></i></a></li>
-                                <li><a href="https://twitter.com/explorekenyabizz" target="_blank"><i
-                                            class='bx bxl-twitter'></i></a></li>
-                                <li><a href="https://www.instagram.com/explorekenyabizz" target="_blank"><i
-                                            class='bx bxl-instagram'></i></a></li>
-                                <li><a href="https://www.youtube.com/@explorekenyabizz" target="_blank"><i
-                                            class='bx bxl-youtube'></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 col-md-8">
-                        <div class="footer-widget pl-5">
-                            <h3>LATEST UPDATES</h3>
-                            <ul class="footer-news">
-                                <li>
-                                    <div class="img">
-                                        <a href="#"><img src="../assets/img/blog/footer-blog1.jpg" alt="Images"></a>
-                                    </div>
-                                    <div class="content">
-                                        <h4>1 Aug 2025</h4>
-                                        <span><a href="#">Top 10 Small Businesses Thriving in Nairobi</a></span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="img">
-                                        <a href="#"><img src="../assets/img/blog/footer-blog2.jpg" alt="Images"></a>
-                                    </div>
-                                    <div class="content">
-                                        <h4>25 July 2025</h4>
-                                        <span><a href="#">How Explore Kenya Bizz Empowers Local Vendors</a></span>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="img">
-                                        <a href="#"><img src="../assets/img/blog/footer-blog3.jpg" alt="Images"></a>
-                                    </div>
-                                    <div class="content">
-                                        <h4>15 July 2025</h4>
-                                        <span><a href="#">Mombasa Markets: Hidden Treasures of Coastal Kenya</a></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Area End -->
-
-    <!-- Copy Right -->
-    <div class="copy-right-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-8">
-                    <div class="copy-right-text">
-                        <p>© Explore Kenya Bizz is proudly managed by <a href="https://visionarybizz.com/"
-                                target="_blank">Visionary Services</a></p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4">
-                    <div class="copy-right-list">
-                        <ul>
-                            <li><a href="" target="_blank">Terms of Use</a></li>
-                            <li><a href="" target="_blank">Privacy Policy</a></li>
-                            <li><a href="" target="_blank">Blog</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Copy Right End -->
+    <div data-include="../partials/footer.html"></div>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
