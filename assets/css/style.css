@@ -1995,6 +1995,10 @@ Place List Area
 
 .place-list-item {
   margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: flex;
+    flex-direction: column;
+    height: 100%;
 
 }
 .place-list-item .images {
@@ -2103,6 +2107,7 @@ Place List Area
   background-color: var(--whiteColor);
   box-shadow: 0 0 15px rgba(102, 102, 102, 0.1);
   padding: 30px 30px 20px 30px;
+  flex-grow: 1;
 }
 .place-list-item .content:hover a h3 {
   color: var(--mainColor);
@@ -2330,12 +2335,15 @@ Place List Area
 
 
 .place-list-item .content p {
-    height: 48px; 
     line-height: 24px;
     margin-left: 30px;
     margin-bottom: 0;
-    padding-bottom: 15px;
+    padding-bottom: 0;
     position: relative;
+    height: auto; 
+    min-height: 48px;
+    word-wrap: break-word;
+    white-space: normal;
 }
 
 
@@ -6134,7 +6142,7 @@ Footer Area
   font-size: 14px;
   color: #d7d7d7;
   position: relative;
-  margin-left: 30px;
+  /* margin-left: 30px; */
   font-weight: 500;
 }
 /* .footer-widget .footer-news li .content h4::before {
