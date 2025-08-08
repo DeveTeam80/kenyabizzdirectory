@@ -1190,11 +1190,18 @@ Inner Banner
 }
 
 .inner-content {
-  padding-top: 250px;
+  padding-top: 350px;
 }
 
 .inner-banner-text {
   padding-bottom: 37px;
+}
+.inner-banner-text h1 {
+  font-size: 50px;
+  color: var(--whiteColor);
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 20px;
 }
 .inner-banner-text h3 {
   font-size: 50px;
@@ -1988,6 +1995,7 @@ Place List Area
 
 .place-list-item {
   margin-bottom: 30px;
+
 }
 .place-list-item .images {
   position: relative;
@@ -2110,7 +2118,7 @@ Place List Area
   margin-left: 30px;
   margin-bottom: 0;
   padding-bottom: 15px;
-  border-bottom: 1px dashed #e8e8e8;
+  /* border-bottom: 1px dashed #e8e8e8; */
   position: relative;
 }
 .place-list-item .content p i {
@@ -2320,6 +2328,21 @@ Place List Area
   margin-left: 0;
 }
 
+
+.place-list-item .content p {
+    height: 48px; 
+    line-height: 24px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+
+.row.justify-content-center .col-lg-6.col-md-6 {
+    display: block; 
+    margin-bottom: 0; 
+}
 /*=================================
 Place List Area End
 ====================================*/
@@ -3915,10 +3938,8 @@ Listing Details Area End
 Application Area
 ====================================*/
 .application-area {
-  background-color: #fef6f2;
   position: relative;
   z-index: 1;
-  margin-bottom: 150px;
 }
 .application-area::before {
   content: "";
@@ -4020,6 +4041,68 @@ Application Area
 .application-area-two .application-content {
   margin-left: 0 !important;
 }
+
+/* This new parent class now handles the background color and shape */
+.about-subscribe-section {
+  /* background-color: #fef6f2; */
+  position: relative;
+  z-index: 1;
+  padding-bottom: 150px; /* Creates space for the content */
+}
+.about-subscribe-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-image: url(../img/shape/shape1.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.subscribe-area-moved {
+  position: relative;
+  z-index: 2; 
+  margin-top: -120px; 
+}
+
+.subscribe-area-moved .newsletter-title h2,
+.subscribe-area-moved .newsletter-title i {
+  color: #252525 ;
+}
+
+.subscribe-area-moved .newsletter-title {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-area-moved .newsletter-title i {
+  margin-right: 15px;
+}
+
+.btn-content span {
+  font-size: 10px;
+  display: block;
+}
+.btn-content h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.newsletter-area .form-control {
+  border-radius: 30px 0 0 30px;
+  padding-left: 20px;
+}
+.newsletter-area .btn {
+  border-radius: 0 30px 30px 0;
+  padding: 12px 20px;
+}
+
+
 
 /*=================================
 Application Area End
@@ -5887,12 +5970,12 @@ Footer Area
 
 .newsletter-title i {
   font-size: 50px;
-  color: var(--whiteColor);
+  color: var(--titleColor);
   display: inline-block;
 }
 .newsletter-title h2 {
   font-size: 30px;
-  color: var(--whiteColor);
+  color: var(--titleColor);
   font-weight: 500;
   margin-left: 20px;
   display: inline-block;
@@ -6054,7 +6137,7 @@ Footer Area
   margin-left: 30px;
   font-weight: 500;
 }
-.footer-widget .footer-news li .content h4::before {
+/* .footer-widget .footer-news li .content h4::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -6062,7 +6145,7 @@ Footer Area
   width: 30px;
   height: 1px;
   background-color: #d7d7d7;
-}
+} */
 .footer-widget .footer-news li .content span {
   display: block;
   font-size: 15px;
